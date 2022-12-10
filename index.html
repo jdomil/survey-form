@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juan Survey Form</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <container class="container">
+      <header class="header">
+        <h1 id="title" class="header__title">Juan Survey Form</h1>
+        <p id="description" class="header__description">
+          This is a form built for the Responsive Web Design certification
+        </p>
+      </header>
+      <div class="form">
+        <form action="" id="survey-form">
+          <label for="name" id="name-label" class="form__label">Name</label>
+          <input
+            type="text"
+            name="name"
+            class="form__input form__input-text"
+            id="name"
+            placeholder="Enter your name"
+            required
+          />
+          <label for="email" class="form__label" id="email-label">Email</label>
+          <input
+            type="email"
+            name="email"
+            class="form__input form__input-text"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+          <label for="satisfaction" class="form__label" id="number-label"
+            >Satisfaction (1-10)</label
+          >
+          <input
+            type="number"
+            min="1"
+            max="10"
+            name="age"
+            class="form__input form__input-text"
+            id="number"
+            placeholder="Satisfaction"
+          />
+          <label for="marketing" class="form__label" id="radio-label"
+            >How did you hear about me?</label
+          >
+          <select
+            name="marketing"
+            class="form__input form__input-dropdown"
+            id="dropdown"
+          >
+            <option value="upwork">Upwork</option>
+            <option value="friend">Friend</option>
+            <option value="ads">Ads</option>
+          </select>
+          <label for="recomendation" class="form__label" id="select-label"
+            >Would you recommend my services?</label
+          >
+          <div class="form__input form__input-radio">
+            <input
+              type="radio"
+              class=""
+              id="definitely"
+              name="recommendation"
+              value="definitely"
+            />
+            <label for="definitely">Definitely</label><br />
+            <input
+              type="radio"
+              id="maybe"
+              name="recommendation"
+              value="maybe"
+            />
+            <label for="maybe">Maybe</label><br />
+            <input
+              type="radio"
+              id="not-sure"
+              name="recommendation"
+              value="not-sure"
+            />
+            <label for="not-sure">Not Sure</label><br />
+          </div>
+          <label for="improvement" class="form__label"
+            >What would you like to see improved?</label
+          >
+          <div class="form__input form__input-multiple">
+            <input
+              type="checkbox"
+              name="improvement"
+              value="better-communication"
+            />Better Communication<br />
+            <input
+              type="checkbox"
+              name="improvement"
+              value="delivery-speed"
+            />Delivery Speed<br />
+            <input
+              type="checkbox"
+              name="improvement"
+              value="quality"
+            />Quality<br />
+            <input
+              type="checkbox"
+              name="improvement"
+              value="price"
+            />Price<br />
+          </div>
+          <label for="suggestions" class="form__label"
+            >Any comments or suggestions?</label
+          >
+          <textarea
+            name="suggestions"
+            id="suggestions"
+            class="form__input form__input-text-area"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <div class="form__button">
+            <button class="btn" id="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </container>
+  </body>
+</html>
